@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <style>
+    body{
+      margin: 0;
+    }
+    a{
+      text-decoration: none;
+      color :white;
+    }
+    .container{
+      background-color: rgb(30, 30, 30);
+      color:white;
+      display :grid;
+      grid-template-columns: 1fr 900px;
+      grid-template-rows: 90px 750px;
+      
+    }
+    header{
+      grid-column: 1/3;
+      display: grid;
+      grid-template-columns: 1400px 800px;
+      
+    }
+    article{
+      grid-column: 1/2;
+      padding-left: 350px;
+      padding-right: 100px;
+      padding-top:50px;
+      
+    }
+    #headline{
+      font-size: 70px;
+      margin-bottom: 35px;
+      font-weight :700;
+      line-height: 1.1;
+    }
+    #inline{
+      font-size: x-large;
+      color :gray;
+    }
+    #headerList ul li{
+      display: inline-block;
+      padding-left: 25px;
+      font-weight: 600;
+      
+    }
+    #SearchButton{
+      margin-top: 37px;
+    }
+    span{
+      text-decoration: underline;
+      color: white;
+    }
+    aside{
+        margin: 15px;
+        grid-column : 2/3;
+        padding-right: 350px;
+        
+        
+    }
+    aside form fieldset{
+      display: inline;
+      background-color: white;
+      color : black;
+      border-radius: 15px;
+      
+    }
+    aside form fieldset ul li{
+      list-style-type:none ;
+      padding-right: 33px;
+      padding-bottom: 20px;
+      padding-top :10px
+    
+    }
+    aside form fieldset label{
+      font-weight: 700;
+    }
+    aside form fieldset input{
+      border-radius:8px;
+      border : 0.1px solid grey;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      
+    }
+    #buttonSign{
+      border-radius:8px ; 
+      border : none;
+      background-color:chartreuse; 
+      font-size: 20px;
+      padding :30px;
+      padding-left: 155px;
+      padding-right: 155px;
+    }
+    .accent{
+      color:blue;
+      text-decoration: underline;
+    }
+  </style>
+  <head>
+    <title>Githtb: Where the world</title>
+    <link rel="shortcut icon" type="image/png" href = "https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
+  </head>
+  <body>
+    <section class = "container">
+      <header>
+        <div id = "headerList">
+          <ul>
+            <li><a href ="https://github.com/" target="_blank"><img src = "https://cdn-icons-png.flaticon.com/512/25/25231.png" wdith = "32" height = "32"></a></li>
+            <li>Why GitHub?</li>
+            <li>Team</li>
+            <li>Enterprise</li>
+            <li>Explore</li>
+            <li>Marketplace</li>
+            <li>Pricing</li>
+          </ul>
+        </div>
+        <div id = "SearchButton">
+          <input type = "search" placeholder="Search GitHub" style="background-color:rgb(30, 30, 30) ; border :0.1px white solid; padding :5px; 
+          padding-top : 10px; padding-bottom : 10px; margin-right: 10px; border-radius: 10px;">
+          <a href ="https://github.com/" style = "margin-right: 10px;">Sign in</a>
+          <input type = "button" value = "Sign up" style="color: white; background-color:rgb(30, 30, 30) ; border :0.3px white solid; padding :5px; 
+          padding-top : 10px; padding-bottom : 10px; margin-right: 10px; border-radius: 10px;">
+        </div>
+      </header>
+      <article>
+        <p id = "headline">
+          Built for developer
+        </p>
+        <p id = "inline">
+          GitHub is a development platform inspired by the way you work.
+          From <span> open source</span>
+          to <span> business</span>
+          , you can host and review code, manage projects, and build software alongside 50
+          million developers.
+        </p>
+      </article>
+      <aside>
+        <form>
+          <fieldset>
+            <ul>
+              <li>
+                <label>Username</label><br>
+                <input type = "text" size ="63">
+              </li>
+              <li>
+                <label>E-mail</label><br>
+                <input type = "text" size = "63">
+              </li>
+              <li>
+                <label>Password</label><br>
+                <input type = "text" size = "63" >
+              </li>
+              <li>
+                <label style ="color :rgb(30, 30, 30); font-weight: 500;"><small>Make sure it's at least 15 characters OR at least
+                  8 characters including a number and a lowercase letter <span class ="accent">Learn more.</span>
+                </small></label>
+                <br><br>
+                
+                <input id = "buttonSign" type = "button" value = "Sign up for GitHub" >
+                <br><br><br>
+
+                <label style ="color :grey; font-weight: 500;"><small>
+                  By clicking "sign up for GitHub" you agree to our <span class = "accent">Terms of Service</span>
+                  and <span class ="accent">Privacy Statement</span>. We'll ocassionally send you account
+                    related email
+                </small></label>
+              </li>  
+            </ul>
+          </fieldset>
+        </form>
+      </aside>
+    </section>
+  </body>
+</html>
